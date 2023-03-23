@@ -1,0 +1,362 @@
+html, body {
+  height: 100%;
+  font-family: 'Montserrat';
+}
+
+#header {
+  background-color: #f36f63;
+  margin: 0px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.header_logo{
+  height: 5%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  vertical-align: middle;
+}
+  
+.topnav #myLinks {
+  display: none;
+}
+  
+.topnav a {
+  color: white;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+  
+.topnav a.icon {
+  background: #f36f63;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
+.icon a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.active {
+  background-color: #f36f63;
+  color: white;
+ }
+
+/* p.vision_header {
+  color: #f36f63;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+} */
+
+h1.mission-header {
+  font-size: 100px;
+  text-align: center;
+  color: #eee;
+  font-size: 200px;
+  font-weight: bold;
+}
+
+h1.steps_header {
+  color: #f36f63;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold; 
+}
+
+#vision_container_background {
+  padding-top: 150px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  z-index: -1;
+  color: #eee;
+  color: rgba(238,238,238, 0.25);
+  font-size: 200px;
+  font-weight: bold;
+  width: 100%;
+  height: 80%;
+  background-image: url("https://images.unsplash.com/photo-1510535043828-3d1edc68071e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZSUyMHVzaW5nJTIwbW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80");
+}
+
+#vision_container {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 80%;
+}
+
+#vision_text {
+  padding-top: 140px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#mission_container {
+  padding-top: 50px;
+  text-align:center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+@media screen and (max-width:320px) {
+  #mission_container {
+    flex-wrap: wrap;}
+}
+
+#mission_container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+#mission_container_background {
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  color: #eee;
+  font-size: 200px;
+  font-weight: bold;
+  width: 100%;
+}
+
+#mission_description {
+  background: #eee;
+  font-size: 30px;
+  margin: 120px 20px 20px 20px;
+  width: 350px;
+  height: 360px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+  color: #f36f63;
+  font-weight: bold;
+}
+@media screen and (max-width:320px) {
+  #mission_description {
+    max-width: 90%;};
+}
+
+#steps_container {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#pointer_container {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  display: flex;
+}
+
+#pointer {
+  width: 20%;
+  height: 400px;
+  font-size: 30px;
+  position: relative;
+  background: #eee;
+  vertical-align: middle;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+#pointer:after {
+  content: "";
+  position: absolute;
+  vertical-align: middle;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#pointer:before {
+  content: "";
+  position: absolute;
+  vertical-align: middle;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #eee;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#pointer-left {
+  width: 18%;
+  height: 400px;
+  position: relative;
+  background: #eee;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+#pointer-left:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 0px solid;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#pointer-left:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #eee;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#pointer-right {
+  width: 22%;
+  height: 400px;
+  position: relative;
+  background: #eee;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+#pointer-right:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#pointer-right:before {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #eee;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#retailers {
+  background: #f36f63;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  display:block;
+}
+
+#retailers-header {
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFF;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#retailers-content {
+  font-size: 20px;
+  width: 33%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFF;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#providers {
+  background: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  display:block;
+}
+
+#providers-header {
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #f36f63;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#providers-content {
+  font-size: 20px;
+  width: 33%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  color: #f36f63;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#customers {
+  background: #eee;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  display:block;
+}
+
+#customers-header {
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#customers-content {
+  font-size: 20px;
+  width: 33%;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+  font-weight: bold;
+  display: inline-block;
+}
